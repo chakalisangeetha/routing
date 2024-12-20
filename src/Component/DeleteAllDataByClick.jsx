@@ -11,12 +11,11 @@ const DeleteAllDataByCilck = () => {
 
     const [data, setData] = React.useState(DataList);
 
-    // Function to toggle between showing and hiding data
     const toggleData = () => {
         if (data.length === 0) {
-            setData(DataList); // If data is empty, restore it
+            setData(DataList); 
         } else {
-            setData([]); // If data is present, clear it
+            setData([]); 
         }
     };
 
