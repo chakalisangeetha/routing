@@ -27,7 +27,6 @@ const Disabled = () => {
                     checked={isChecked}
                     onChange={(e) => setIsChecked(e.target.checked)}
                 />
-
                 <h4>   Agree to terms</h4>
 
             </label>
