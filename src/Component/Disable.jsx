@@ -8,7 +8,7 @@ const Disabled = () => {
 
     const handleSubmit = () => {
         setSubmittedText(inputValues);
-        setIsClicked(false); // Change the button text after submitting
+        setIsClicked(false); //Change the button text after submitting
         setInputValues('')
     };
 
@@ -45,7 +45,6 @@ const Disabled = () => {
         </>
     );
 };
-
 export default Disabled;
 
 
