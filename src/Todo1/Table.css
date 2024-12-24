@@ -1,0 +1,54 @@
+.forminputs,
+.tablecomp,
+.search {
+  display: flex;
+  background-color: skyblue;
+  width: fit-content;
+  margin: auto;
+  border: 2px double black;
+  border-radius: 20px;
+}
+.form {
+  padding: 10px;
+}
+input {
+  margin: 2px;
+}
+
+.namefield {
+  margin-left: 23px;
+}
+
+.emailfield {
+  margin-left: 6px;
+}
+
+.tablecomp {
+  padding: 4px;
+  background-color: rgb(185, 233, 207);
+  border: none;
+  border-radius: 0  ;
+}
+.search {
+  padding: 4px;
+  border: none;
+  border-radius: 0;
+}
+.buttondiv {
+  margin-top: 10px ;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header, .navbttons {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+}
+
+.openform, .opentable {
+margin-left: 20px;
+}
+
+td {
+  text-align: center;
+}
