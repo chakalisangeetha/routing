@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 const Store = () => {
-  const [data, setData] = useState("");
+  const [data, setData]=useState("");
   const handleFetch = (e) => {
     e.preventDefault();
     fetch("https://jsonplaceholder.typicode.com/users/4")
