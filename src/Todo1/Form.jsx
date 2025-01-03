@@ -103,15 +103,18 @@ const Form = () => {
     const Onsearch = (e) => {
         if (e.currentTarget.value.charAt(0) == ' ') {
             e.target.value = e.target.value.replace(/\s/g, '');
-        } else {
+        } else 
+        
+        {
             const searchname = e.target.value;
             setSearchInput(searchname);
         }
     };
+
+
     const filteredData = list.filter((item) =>
         item.Fname.toLowerCase().includes(searchInput.toLowerCase())
     );
-
     const clearInputs = (e) => {
         e.preventDefault();
         setData({
@@ -120,15 +123,15 @@ const Form = () => {
             Psd: '',
         });
     };
-
     const OpenForm = () => {
         setHideForm(true);
         setHidetable(false);
     };
 
     const Opentable = () => {
-        setHidetable(true);
         setHideForm(false);
+        setHidetable(true);
+        
     };
 
     return (
