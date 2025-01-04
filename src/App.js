@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import DeleteAllDataByClick from './DltAndDisable/DeleteAllDataByClick'
 import Disable from './DltAndDisable/Disable'
-import Form from './TodoAllCovered/Form';
-import LocalStorage from './LocalStorages/Store';
-import Page from './Pagenation/Page'
+import Page from './Pagenation/Page';
+import Store from './LocalStorages/Store';
+import Form from './FormAllCoverd/Form'
 import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <Page/> */}
-      <LocalStorage/>
-    {/* <DeleteAllDataByClick/> */}
+      <Page/>
+      <Form/>
+    <Store/>
+     <DeleteAllDataByClick/>
     <Disable/>
-    <Form/>
     </div>
   );
 }
