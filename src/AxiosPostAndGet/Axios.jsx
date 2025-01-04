@@ -234,3 +234,106 @@ export default AxiosPostandGet;
 
 
 
+
+// import axios from 'axios';
+// import React , {useEffect, useState} from 'react'
+// const Axios= () =>{
+// const[flag,setFlag]=useState(false)
+// const [apidata , setApiData] = useState([])
+// const [inputData , setInputData] = useState({
+//     name:'',
+//     email:'',
+//     place:'',
+// })
+
+// useEffect(()=>{
+//     axios.get('https://fir-project-49219-default-rtdb.firebaseio.com/newdata.json')
+//     .then((data)=>setApiData(Object.values(data.data)))
+// },[flag])
+// console.log(apidata,'362==')
+
+// console.log(inputData,'337==')
+// const{name , email , place} = inputData;
+
+// const handleChange =(e)=>{
+//   setInputData({...inputData ,[e.target.name]:e.target.value})  
+// }
+// const handleSubmit=(e)=>{
+//     e.preventDefault();
+
+//     if(!inputData.name||!inputData.email||!inputData.place){
+//        alert('please enter your data')
+//     }else{
+//         axios.post('https://fir-project-49219-default-rtdb.firebaseio.com/newdata.json' , inputData) 
+//         .then(() => alert('data sent success')); 
+
+//         setTimeout(()=>{
+//             setFlag(!flag)
+//         },1000)
+//     }
+//     setInputData({
+//         name:'',
+//         email:'',
+//         place:'', 
+//     })
+// }
+//     return(
+//         <div>
+//              Allpractice
+
+//              <form onSubmit={handleSubmit}>
+//                 <div>
+//                     <lable>Name:</lable>
+//                     <input type='text'
+//                     placeholder='enter your name'
+//                     value={name}
+//                     name='name'
+//                     onChange={handleChange}/>
+//                     </div>
+                
+//                     <div>
+//                     <lable>Email:</lable>
+//                     <input type='eamil'
+//                     placeholder='enter your name'
+//                     value={email}
+//                     name='email'
+//                     onChange={handleChange}/>
+//                     </div>
+
+//                     <div>
+//                     <lable>place:</lable>
+//                     <input type='text'
+//                     placeholder='enter your name'
+//                     value={place}
+//                     name='place'
+//                     onChange={handleChange}/>
+//                     </div>
+
+//                <button type='submit'>Submit</button>
+//              </form>
+//             <table>
+//                 <thead>
+//                     <tr>
+//                         <th>sno</th>
+//                         <th>name</th>
+//                         <th>email</th>
+//                         <th>place</th>
+//                     </tr>
+//                 </thead>
+//                 {
+//                     apidata.map((item,index)=><div>
+//                         <tr>
+//                             <td>{index+1}</td>
+//                             <td>{item.name}</td>
+//                             <td>{item.email}</td>
+//                             <td>{item.place}</td>
+//                         </tr>
+//                     </div>)
+//                 }
+//             </table>
+//          </div>
+//     )
+// }
+// export default Axios;
+
+
