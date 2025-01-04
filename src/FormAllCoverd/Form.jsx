@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Table from './Table';
-const  Formpage=(props)=> {
+const Formpage = (props) => {
   const [togglebtn, setTogglebtn] = useState(false);
   const [editId, setEditId] = useState(null);
   const [searchInput, setSearchInput] = useState('');
@@ -124,7 +124,7 @@ const  Formpage=(props)=> {
           {showform ? 'close form ' : ' Add New '} {' '}
         </button>
       </div>
-      
+
       {showform ? (
         <div className="formdiv">
           <div className="overlay">
