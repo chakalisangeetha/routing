@@ -7,10 +7,12 @@ import Store from './LocalStorages/Store';
 //  import Axios from './AxiosPostAndGet/Axios'
 import Form from './FormAllCoverd/Form'
 import Data from './Formik/Data';
+import Valid from './Validations/Valid'
 import './App.css';
 function App() {
   return (
     <div className="App">
+      <Valid/> 
       <Data />
       {/* <Axios/> */}
       <Page />

@@ -35,9 +35,9 @@ const Table = (props) => {
                                                 Delete
                                             </button>
                                         </td>
-                                        <td>
+                                        {/* <td>
                     <button onClick={() => props.send(id) } > Show Content </button>
-                      </td>
+                      </td> */}
                                     </tr>
                                 ))}
                             </tbody>

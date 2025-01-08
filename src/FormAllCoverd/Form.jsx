@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Table from './Table';
 const Formpage = (props) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [togglebtn, setTogglebtn] = useState(false);
   const [editId, setEditId] = useState(null);
   const [searchInput, setSearchInput] = useState('');
@@ -118,10 +118,10 @@ const Formpage = (props) => {
     alert(' your input are cleared...  ');
   };
    
-  const sendData=(id)=>{
-    navigate('/details', { state: id });
-    console.log(id, '101==');
-  }
+  // const sendData=(id)=>{
+  //   navigate('/details', { state: id });
+  //   console.log(id, '101==');
+  // }
   return (
     <div className="Content">
       <div className="title">
@@ -196,7 +196,9 @@ const Formpage = (props) => {
                 onChange={Onsearch}
               />
             </div>
-            <Table data={filtereddata} delete={DeleteItem} edit={editItem} send={sendData}/>
+            <Table data={filtereddata} delete={DeleteItem} edit={editItem} 
+            // send={sendData}
+            />
           </div>
         )}
       </div>
