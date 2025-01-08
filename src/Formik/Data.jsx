@@ -20,7 +20,6 @@ const Practise = () => {
       .oneOf([Yup.ref('password'), null], 'Passwords must match')
       .required('Confirm Password is required'),
   });
-
   return (
     <>
       practise formic
