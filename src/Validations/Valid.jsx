@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Form, Button } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 
 const Valid = () => {
   const {
@@ -15,7 +16,6 @@ const Valid = () => {
     Lname: '',
     Email: '',
   });
-
   const onSubmit = (data) => {
     setData(JSON.stringify(data));
     console.log(data, '30==');
