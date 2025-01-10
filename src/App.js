@@ -7,11 +7,13 @@ import Store from './LocalStorages/Store';
 import Form from './FormAllCoverd/Form'
 import Data from './Formik/Data';
 // import Valid from './Validations/Valid'
+import Password from './PasswordGenerator/Password'
 import './App.css';
 function App() {
 
   return (
     <div className="App">
+      <Password/>
       {/* <Valid /> */}
       <Data />
       {/* <Axios/> */}
