@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import Table from './Table';
-const Formpage = (props) => {
-  // const navigate = useNavigate();
+const Form = (props) => {
   const [togglebtn, setTogglebtn] = useState(false);
   const [editId, setEditId] = useState(null);
   const [searchInput, setSearchInput] = useState('');
@@ -25,10 +23,8 @@ const Formpage = (props) => {
     setShowForm(!showform);
     setShowTable(!showTable);
   };
-
   const submithandler = (e) => {
     console.log(data, 'data');
-
     if (!data.firstname || !data.lastname || !data.email) {
       alert('please fill all the inputs...  ');
     } else if (data && togglebtn) {
@@ -117,11 +113,6 @@ const Formpage = (props) => {
     togglebtn ? togglebtn && submithandler() : setShowForm(true);
     alert(' your input are cleared...  ');
   };
-   
-  // const sendData=(id)=>{
-  //   navigate('/details', { state: id });
-  //   console.log(id, '101==');
-  // }
   return (
     <div className="Content">
       <div className="title">
@@ -167,6 +158,7 @@ const Formpage = (props) => {
                   required
                 />
               </div>
+
               <div className="buttonslist">
                 <button type="submit" onClick={submithandler}>
                   {togglebtn ? 'Updata' : ' Submit '}
@@ -180,6 +172,7 @@ const Formpage = (props) => {
                   close{' '}
                 </button>
               </div>
+              
             </form>
           </div>
         </div>
@@ -196,13 +189,11 @@ const Formpage = (props) => {
                 onChange={Onsearch}
               />
             </div>
-            <Table data={filtereddata} delete={DeleteItem} edit={editItem} 
-            // send={sendData}
-            />
+            <Table data={filtereddata} delete={DeleteItem} edit={editItem}/>
           </div>
         )}
       </div>
     </div>
   );
 }
-export default Formpage;
+export default Form;
