@@ -9,11 +9,12 @@ import Data from './Formik/Data';
   import Valid from './Validations/Valid'
 import Password from './PasswordGenerator/Password';
 import Async from './AsyncAndAwait/Async';
-import Read from './ReadMoreAndLess/Read'
-import './App.css';
+import Read from './ReadMoreAndLess/Read';
+import Name from './UpdateSelInput/Name';
 function App() {
   return (
     <div className="App">
+      <Name/>
       <Read />
       <Async/>
       <Password/>
