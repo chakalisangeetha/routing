@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Form } from 'semantic-ui-react';
-import { Button } from 'semantic-ui-react';
+import { Form, Button } from 'semantic-ui-react';
 
-const Valid = () => {
+const Validations = () => {
   const {
     register,
     handleSubmit,
@@ -16,6 +15,8 @@ const Valid = () => {
     Lname: '',
     Email: '',
   });
+
+  const{Fname , Lname ,Email}=data
   const onSubmit = (data) => {
     setData(JSON.stringify(data));
     console.log(data, '30==');
@@ -86,7 +87,7 @@ const Valid = () => {
     </>
   );
 };
-export default Valid;
+export default Validations;
 
 /* <Form.Field>
 <label>First Name :</label>

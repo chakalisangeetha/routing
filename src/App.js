@@ -6,18 +6,19 @@ import Store from './LocalStorages/Store';
 //  import Axios from './AxiosPostAndGet/Axios'
 import Form from './FormAllCoverd/Form'
 import Data from './Formik/Data';
-// import Valid from './Validations/Valid'
-import Password from './PasswordGenerator/Password'
+  import Valid from './Validations/Valid'
+import Password from './PasswordGenerator/Password';
+import Async from './AsyncAndAwait/Async';
 import './App.css';
 function App() {
-
   return (
     <div className="App">
+      <Async/>
       <Password/>
       {/* <Valid /> */}
       <Data />
       {/* <Axios/> */}
-      <Page />
+       <Page />
       <Form />
       <Store />
       <DeleteAllDataByClick />
