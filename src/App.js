@@ -18,9 +18,11 @@ import Examples from './SomeExamples/Examples';
 import UseRef from './UseReference/UseRef';
 import FilterList from './FilterExmple/FilterList';
 import Filter2 from './FilterExmple/Filter2';
+import Cart from './CountingIncAndDec/Cart';
 function App() {
   return ( 
     <div className="App">
+      < Cart/>
       <FilterList/>
       <Filter2/>
       < UseRef/>

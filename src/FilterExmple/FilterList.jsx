@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 function FilterList(){
   const [query, setQuery] = useState('');
   const items = ['React', 'Angular', 'Vue', 'Svelte'];
@@ -10,7 +9,7 @@ function FilterList(){
   return (
     <div>
       <input
-        type="text"
+        type="text"      
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search..."
