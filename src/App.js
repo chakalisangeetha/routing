@@ -14,9 +14,11 @@ import Name from './UpdateSelInput/Name';
 import EditDlt from './OnlyEditAndDlt/EditDlt';
 import Ascending from './AscendingDecending/Ascending';
 import Active from './ActiveInActive/Active';
+import Examples from './SomeExamples/Examples';
 function App() {
   return (
     <div className="App">
+      <Examples/>
       < Ascending />
       <EditDlt/>
       <Name/>
