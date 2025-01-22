@@ -15,9 +15,11 @@ import EditDlt from './OnlyEditAndDlt/EditDlt';
 import Ascending from './AscendingDecending/Ascending';
 import Active from './ActiveInActive/Active';
 import Examples from './SomeExamples/Examples';
+import UseRef from './UseReference/UseRef';
 function App() {
   return (
     <div className="App">
+      < UseRef/>
       <Examples/>
       < Ascending />
       <EditDlt/>
