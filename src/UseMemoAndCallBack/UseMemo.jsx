@@ -27,11 +27,11 @@ function UseMemo() {
         <button onClick={() => setCount(count + 1)}>Increment Count</button>
       </div>
       <div>
-        <input 
-          type="text" 
-          value={text} 
-          onChange={(e) => setText(e.target.value)} 
-          placeholder="Type something" 
+        <input
+          type="text"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Type something"
         />
       </div>
     </div>
