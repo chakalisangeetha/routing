@@ -19,9 +19,17 @@ import UseRef from './UseReference/UseRef';
 import FilterList from './FilterExmple/FilterList';
 import Filter2 from './FilterExmple/Filter2';
 import Cart from './CountingIncAndDec/Cart';
+import UseCallBack from './UseMemoAndCallBack/UseCallBack';
+import UseMemo from './UseMemoAndCallBack/UseMemo';
+import UseMemoCallBoth from  './UseMemoAndCallBack/UseMemoCallBoth';
+import Calculate from './Calculater/Calculate';
 function App() {
   return ( 
     <div className="App">
+      <Calculate/>
+    <UseCallBack/>
+    <UseMemo/>
+    <UseMemoCallBoth/>
       < Cart/>
       <FilterList/>
       <Filter2/>
