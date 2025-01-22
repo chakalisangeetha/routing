@@ -23,7 +23,7 @@ const Name = () => {
     <>
       <input type="text" value={value} onChange={handleChange} />
       <button onClick={handleUpdate}>Update</button>
-      ARRAY OF SRTINGS
+      ARRAY OF STRINGS
       {data.map((item, index) => {
         return <li onClick={(e) => handleClick(e, item, index)}>{item}</li>;
       })}
