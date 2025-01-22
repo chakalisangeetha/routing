@@ -11,9 +11,13 @@ import Password from './PasswordGenerator/Password';
 import Async from './AsyncAndAwait/Async';
 import Read from './ReadMoreAndLess/Read';
 import Name from './UpdateSelInput/Name';
+import EditDlt from './OnlyEditAndDlt/EditDlt';
+import Ascending from './AscendingDecending/Ascending';
 function App() {
   return (
     <div className="App">
+      < Ascending />
+      <EditDlt/>
       <Name/>
       <Read />
       <Async/>
