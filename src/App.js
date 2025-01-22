@@ -16,9 +16,13 @@ import Ascending from './AscendingDecending/Ascending';
 import Active from './ActiveInActive/Active';
 import Examples from './SomeExamples/Examples';
 import UseRef from './UseReference/UseRef';
+import FilterList from './FilterExmple/FilterList';
+import Filter2 from './FilterExmple/Filter2';
 function App() {
   return (
     <div className="App">
+      <FilterList/>
+      <Filter2/>
       < UseRef/>
       <Examples/>
       < Ascending />
