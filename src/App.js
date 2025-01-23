@@ -26,9 +26,11 @@ import Calculate from './Calculater/Calculate';
 import RoutingPage from './RouterUsungParams/RoutingPage';
 import Routepage from './FiveInputsTodo/RoutePage';
 import Drop from './DropDown/Drop';
+import Mapping from './MappingInsideMapping/Mapping';
 function App() {
   return ( 
     <div className="App">
+      <Mapping/>
       <Drop/>
       <Routepage/>
       <RoutingPage />
