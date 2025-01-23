@@ -6,7 +6,7 @@ import Store from './LocalStorages/Store';
 //  import Axios from './AxiosPostAndGet/Axios'
 import Form from './FormAllCoverd/Form'
 import Data from './Formik/Data';
-  import Valid from './Validations/Valid'
+import Valid from './Validations/Valid'
 import Password from './PasswordGenerator/Password';
 import Async from './AsyncAndAwait/Async';
 import Read from './ReadMoreAndLess/Read';
@@ -21,7 +21,7 @@ import Filter2 from './FilterExmple/Filter2';
 import Cart from './CountingIncAndDec/Cart';
 import UseCallBack from './UseMemoAndCallBack/UseCallBack';
 import UseMemo from './UseMemoAndCallBack/UseMemo';
-import UseMemoCallBoth from  './UseMemoAndCallBack/UseMemoCallBoth';
+import UseMemoCallBoth from './UseMemoAndCallBack/UseMemoCallBoth';
 import Calculate from './Calculater/Calculate';
 import RoutingPage from './RouterUsungParams/RoutingPage';
 import Routepage from './FiveInputsTodo/RoutePage';
@@ -32,41 +32,42 @@ import Switch from './SwitchCase/Switch';
 import Practise from './SwitchCase/Practise';
 import EvenOdd from './SwitchCase/EvenOdd'
 function App() {
-import EvenOdd from './SwitchCase/EvenOdd'
-<div>
-           <EvenOdd/>
-      <Practise/>
-      <Switch/>
-      <Box/>
-      <Mapping/>
-      <Drop/>
-      <Routepage/>
-      <RoutingPage />
-      <Calculate/>
-    <UseCallBack/>
-    <UseMemo/>
-    <UseMemoCallBoth/>
-      < Cart/>
-      <FilterList/>
-      <Filter2/>
-      < UseRef/>
-      <Examples/>
-      < Ascending />
-      <EditDlt/>
-      <Name/>
-      <Read />
-      <Async/>
-      <Password/>
-      {/* <Valid /> */}
-      <Data />
-      {/* <Axios/> */}
-       <Page />
-      <Form />
-      <Store />
-      <DeleteAllDataByClick />
-      <Disable />
-     < Active />
-    </div>
+return(
+  <div>
+    <Switch />
+    <EvenOdd />
+    <Practise />
+    <Switch />
+    <Box />
+    <Mapping />
+    <Drop />
+    <Routepage />
+    <RoutingPage />
+    <Calculate />
+    <UseCallBack />
+    <UseMemo />
+    <UseMemoCallBoth />
+    < Cart />
+    <FilterList />
+    <Filter2 />
+    < UseRef />
+    <Examples />
+    < Ascending />
+    <EditDlt />
+    <Name />
+    <Read />
+    <Async />
+    <Password />
+    {/* <Valid /> */}
+    <Data />
+    {/* <Axios/> */}
+    <Page />
+    <Form />
+    <Store />
+    <DeleteAllDataByClick />
+    <Disable />
+    < Active />
+  </div>
   );
 }
 export default App;
