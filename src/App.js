@@ -24,9 +24,11 @@ import UseMemo from './UseMemoAndCallBack/UseMemo';
 import UseMemoCallBoth from  './UseMemoAndCallBack/UseMemoCallBoth';
 import Calculate from './Calculater/Calculate';
 import RoutingPage from './RouterUsungParams/RoutingPage';
+import Routepage from './FiveInputsTodo/RoutePage';
 function App() {
   return ( 
     <div className="App">
+      <Routepage/>
       <RoutingPage />
       <Calculate/>
     <UseCallBack/>

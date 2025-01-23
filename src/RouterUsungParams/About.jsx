@@ -19,18 +19,18 @@
 
 
 import React from 'react';
-import{useNavigate}from 'react-router-dom'
-const About=()=>{
-  const navigate=useNavigate();
-  const data1={name:'seetha' , age:23}
-  return(
-    <>
-    
-    <button onClick={()=>{navigate(`/${"pandu"}`)}}> navigate</button>
-   <button onClick={()=>{navigate('/Contact',{state:data1})}}>navigate to Contact</button>
-    
-    </>
-  )
+import { useNavigate } from 'react-router-dom'
+const About = () => {
+    const navigate = useNavigate();
+    const data1 = { name: 'seetha', age: 23 }
+    return (
+        <>
+
+            <button onClick={() => { navigate(`/${"pandu"}`) }}> navigate</button>
+            <button onClick={() => { navigate('/Contact', { state: data1 }) }}>navigate to Contact</button>
+
+        </>
+    )
 }
 export default About;
 
