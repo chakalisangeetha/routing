@@ -23,9 +23,11 @@ import UseCallBack from './UseMemoAndCallBack/UseCallBack';
 import UseMemo from './UseMemoAndCallBack/UseMemo';
 import UseMemoCallBoth from  './UseMemoAndCallBack/UseMemoCallBoth';
 import Calculate from './Calculater/Calculate';
+import RoutingPage from './RouterUsungParams/RoutingPage';
 function App() {
   return ( 
     <div className="App">
+      <RoutingPage />
       <Calculate/>
     <UseCallBack/>
     <UseMemo/>
