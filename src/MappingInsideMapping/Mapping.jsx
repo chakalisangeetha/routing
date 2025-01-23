@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './style.css';
+import './Style.css';
 const Mapping = () => {
   const a = [ 'sangeetha', 'pandu'];
   const b = ['ramu', 'anitha', 'dolly', 'prani'];

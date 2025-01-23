@@ -14,7 +14,7 @@ import Name from './UpdateSelInput/Name';
 import EditDlt from './OnlyEditAndDlt/EditDlt';
 import Ascending from './AscendingDecending/Ascending';
 import Active from './ActiveInActive/Active';
-import Examples from './SomeExamples/Examples';
+import Examples from './LoginExamples/Examples';
 import UseRef from './UseReference/UseRef';
 import FilterList from './FilterExmple/FilterList';
 import Filter2 from './FilterExmple/Filter2';
@@ -27,9 +27,11 @@ import RoutingPage from './RouterUsungParams/RoutingPage';
 import Routepage from './FiveInputsTodo/RoutePage';
 import Drop from './DropDown/Drop';
 import Mapping from './MappingInsideMapping/Mapping';
+import Box from './CheckBoxExample/Box'
 function App() {
   return ( 
     <div className="App">
+      <Box/>
       <Mapping/>
       <Drop/>
       <Routepage/>
