@@ -33,9 +33,11 @@ import Practise from './SwitchCase/Practise';
 import EvenOdd from './SwitchCase/EvenOdd';
 import Dates from './DatesExample/Dates'
 import Fact from './Factorial/Fact'
+import IfCndtn from './IfCondition/IfCndtn';
 function App() {
 return(
   <div>
+    <IfCndtn/>
     <Fact/>
     <Dates/>
     <Switch />
