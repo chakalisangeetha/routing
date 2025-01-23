@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-const ifCndtn = () => {
+const IfCndtn = () => {
     const [status, setStatus] = useState(false)
-
     let text = "";
     if (status) {
         text = "ON";
@@ -16,7 +15,7 @@ const ifCndtn = () => {
         </>
     )
 }
-export default ifCndtn;
+export default IfCndtn;
 
 
 
