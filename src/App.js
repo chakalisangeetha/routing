@@ -30,10 +30,12 @@ import Mapping from './MappingInsideMapping/Mapping';
 import Box from './CheckBoxExample/Box';
 import Switch from './SwitchCase/Switch';
 import Practise from './SwitchCase/Practise';
-import EvenOdd from './SwitchCase/EvenOdd'
+import EvenOdd from './SwitchCase/EvenOdd';
+import Dates from './DatesExample/Dates'
 function App() {
 return(
   <div>
+    <Dates/>
     <Switch />
     <EvenOdd />
     <Practise />
