@@ -32,9 +32,11 @@ import Switch from './SwitchCase/Switch';
 import Practise from './SwitchCase/Practise';
 import EvenOdd from './SwitchCase/EvenOdd';
 import Dates from './DatesExample/Dates'
+import Fact from './Factorial/Fact'
 function App() {
 return(
   <div>
+    <Fact/>
     <Dates/>
     <Switch />
     <EvenOdd />
