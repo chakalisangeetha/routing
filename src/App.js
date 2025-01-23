@@ -25,9 +25,11 @@ import UseMemoCallBoth from  './UseMemoAndCallBack/UseMemoCallBoth';
 import Calculate from './Calculater/Calculate';
 import RoutingPage from './RouterUsungParams/RoutingPage';
 import Routepage from './FiveInputsTodo/RoutePage';
+import Drop from './DropDown/Drop';
 function App() {
   return ( 
     <div className="App">
+      <Drop/>
       <Routepage/>
       <RoutingPage />
       <Calculate/>
