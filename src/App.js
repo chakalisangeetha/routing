@@ -34,6 +34,7 @@ import EvenOdd from './SwitchCase/EvenOdd';
 import Dates from './DatesExample/Dates'
 import Fact from './Factorial/Fact'
 import IfCndtn from './IfCondition/IfCndtn';
+import Fetch from './FetchAndMock/FetchData';
 function App() {
 return(
   <div>
@@ -65,7 +66,8 @@ return(
     <Async />
     <Password />
     {/* <Valid /> */}
-    <Data />
+{/*    
+    <Fetch/> */}
     {/* <Axios/> */}
     <Page />
     <Form />
