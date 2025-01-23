@@ -27,10 +27,16 @@ import RoutingPage from './RouterUsungParams/RoutingPage';
 import Routepage from './FiveInputsTodo/RoutePage';
 import Drop from './DropDown/Drop';
 import Mapping from './MappingInsideMapping/Mapping';
-import Box from './CheckBoxExample/Box'
+import Box from './CheckBoxExample/Box';
+import Switch from './SwitchCase/Switch';
+import Practise from './SwitchCase/Practise';
+import EvenOdd from './SwitchCase/EvenOdd'
 function App() {
-  return ( 
-    <div className="App">
+import EvenOdd from './SwitchCase/EvenOdd'
+<div>
+           <EvenOdd/>
+      <Practise/>
+      <Switch/>
       <Box/>
       <Mapping/>
       <Drop/>

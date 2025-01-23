@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Table from './Table';
-
 const EditDlt = () => {
   const [toggle, setToggle] = useState(false);
   const [searchInput, setSearchInput] = useState('');
@@ -21,7 +20,7 @@ const EditDlt = () => {
       if (toggle) {
         // Update the existing item in the list
         const updatedList = list.map((item) =>
-              item.id === editingId ? {...item , title1: data , title2:data.toLowerCase() }: item
+          item.id === editingId ? { ...item, title1: data, title2: data.toLowerCase() } : item
         );
         setList(updatedList); // Update the list with the modified item
         setToggle(false); // Reset toggle to switch back to "Submit" mode
