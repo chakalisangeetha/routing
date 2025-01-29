@@ -35,9 +35,14 @@ import Dates from './DatesExample/Dates'
 import Fact from './Factorial/Fact'
 import IfCndtn from './IfCondition/IfCndtn';
 import Fetch from './FetchAndMock/FetchData';
+import Conditional from './CndtnlOprWthTwoAryOfObjects/Conditional';
+import Multiple from './LoopngMulVariablesAtAtime/Multiple';
 function App() {
 return(
   <div>
+    <Multiple/>
+    <Conditional/>
+    <Fetch/>
     <IfCndtn/>
     <Fact/>
     <Dates/>

@@ -17,8 +17,6 @@ return (
       <tr>
         <th>id</th>
         <th>title</th>
-        <th>title</th>
-      
       </tr>
     </thead>
     <tbody>
