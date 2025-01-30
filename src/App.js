@@ -37,9 +37,12 @@ import IfCndtn from './IfCondition/IfCndtn';
 import Fetch from './FetchAndMock/FetchData';
 import Conditional from './CndtnlOprWthTwoAryOfObjects/Conditional';
 import Multiple from './LoopngMulVariablesAtAtime/Multiple';
+import SearchFilter from './Search and Filter/SearchFilter';
 function App() {
 return(
   <div>
+  
+      <SearchFilter/>
     <Multiple/>
     <Conditional/>
     <Fetch/>
@@ -80,6 +83,7 @@ return(
     <DeleteAllDataByClick />
     <Disable />
     < Active />
+    {/* dD6EfEWjNii3FXG */}
   </div>
   );
 }
