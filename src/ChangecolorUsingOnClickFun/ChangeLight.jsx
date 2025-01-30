@@ -21,4 +21,4 @@ const ChangeLight = () => {
   );
 };
 
-export default ChangeLigh ;
+export default ChangeLight ;

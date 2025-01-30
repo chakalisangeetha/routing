@@ -38,9 +38,14 @@ import Conditional from './CndtnlOprWthTwoAryOfObjects/Conditional';
 import Multiple from './LoopngMulVariablesAtAtime/Multiple';
 import SearchFilter from './Search and Filter/SearchFilter';
 import Accending from './AccendingAndDecending/Accending';
+import ContextProv from './ContextProvUsingRouting/ContextProv';
+import ContextRoute from './ContextProvUsingRouting/ContextRoute'
 function App() {
 return(
   <div>
+          < ContextProv>
+   <ContextRoute/>
+      </ ContextProv>
           <Accending/>
       <SearchFilter/>
     <Multiple/>
