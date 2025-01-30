@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Active from './ActiveInActive/Active'
 import DeleteAllDataByClick from './DltalldatabyclickAndDisable/DeleteAllDataByClick'
 import Disable from './DltalldatabyclickAndDisable/Disable'
 import Page from './Pagenation/Page';
@@ -12,8 +13,6 @@ import Async from './AsyncAndAwait/Async';
 import Read from './ReadMoreAndLess/Read';
 import Name from './UpdateSelInput/Name';
 import EditDlt from './OnlyEditAndDlt/EditDlt';
-import Ascending from './AscendingDecending/Ascending';
-import Active from './ActiveInActive/Active';
 import Examples from './LoginExamples/Examples';
 import UseRef from './UseReference/UseRef';
 import FilterList from './FilterExmple/FilterList';
@@ -38,10 +37,11 @@ import Fetch from './FetchAndMock/FetchData';
 import Conditional from './CndtnlOprWthTwoAryOfObjects/Conditional';
 import Multiple from './LoopngMulVariablesAtAtime/Multiple';
 import SearchFilter from './Search and Filter/SearchFilter';
+import Accending from './AccendingAndDecending/Accending';
 function App() {
 return(
   <div>
-  
+          <Accending/>
       <SearchFilter/>
     <Multiple/>
     <Conditional/>
@@ -67,7 +67,6 @@ return(
     <Filter2 />
     < UseRef />
     <Examples />
-    < Ascending />
     <EditDlt />
     <Name />
     <Read />
