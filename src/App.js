@@ -42,10 +42,11 @@ import ContextProv from './ContextProvUsingRouting/ContextProv';
 import ContextRoute from './ContextProvUsingRouting/ContextRoute';
 // import Reusable from './ReusableConcept/Reuable';
 // import Button from './ReusableConcept/Button';
+import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
-
+       <Cases a={40} b={60}/>
       {/* <Button/>
     <Reusable/> */}
       < ContextProv>
