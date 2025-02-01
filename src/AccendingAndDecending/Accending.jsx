@@ -10,9 +10,11 @@ const Accending = () => {
                 console.log(data, "9==");
             });
     }, []);
+  
     const handleIncrease = () => {
         const newData = data.toSorted(function (a, b) {
             return a.title > b.title ? 1 : -1;
+
         });
         setData(newData);
     };

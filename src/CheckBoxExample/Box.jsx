@@ -21,10 +21,7 @@ const Usecheck = () => {
     return (
         <div>
             <button onClick={handleShow}>show /hide</button>
-
-
             <div className='list'>
-
                 {hideTable && <div>
                     <div>
                         <label>
@@ -36,7 +33,6 @@ const Usecheck = () => {
                             hide s no
                         </label>
                     </div>
-
                     <div>
                         <label>
                             <input
