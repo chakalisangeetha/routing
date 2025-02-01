@@ -39,56 +39,61 @@ import Multiple from './LoopngMulVariablesAtAtime/Multiple';
 import SearchFilter from './Search and Filter/SearchFilter';
 import Accending from './AccendingAndDecending/Accending';
 import ContextProv from './ContextProvUsingRouting/ContextProv';
-import ContextRoute from './ContextProvUsingRouting/ContextRoute'
+import ContextRoute from './ContextProvUsingRouting/ContextRoute';
+// import Reusable from './ReusableConcept/Reuable';
+// import Button from './ReusableConcept/Button';
 function App() {
-return(
-  <div>
-          < ContextProv>
-   <ContextRoute/>
+  return (
+    <div>
+
+      {/* <Button/>
+    <Reusable/> */}
+      < ContextProv>
+        <ContextRoute />
       </ ContextProv>
-          <Accending/>
-      <SearchFilter/>
-    <Multiple/>
-    <Conditional/>
-    <Fetch/>
-    <IfCndtn/>
-    <Fact/>
-    <Dates/>
-    <Switch />
-    <EvenOdd />
-    <Practise />
-    <Switch />
-    <Box />
-    <Mapping />
-    <Drop />
-    <Routepage />
-    <RoutingPage />
-    <Calculate />
-    <UseCallBack />
-    <UseMemo />
-    <UseMemoCallBoth />
-    < Cart />
-    <FilterList />
-    <Filter2 />
-    < UseRef />
-    <Examples />
-    <EditDlt />
-    <Name />
-    <Read />
-    <Async />
-    <Password />
-    {/* <Valid /> */}
-{/*    
+      <Accending />
+      <SearchFilter />
+      <Multiple />
+      <Conditional />
+      <Fetch />
+      <IfCndtn />
+      <Fact />
+      <Dates />
+      <Switch />
+      <EvenOdd />
+      <Practise />
+      <Switch />
+      <Box />
+      <Mapping />
+      <Drop />
+      <Routepage />
+      <RoutingPage />
+      <Calculate />
+      <UseCallBack />
+      <UseMemo />
+      <UseMemoCallBoth />
+      < Cart />
+      <FilterList />
+      <Filter2 />
+      < UseRef />
+      <Examples />
+      <EditDlt />
+      <Name />
+      <Read />
+      <Async />
+      <Password />
+      {/* <Valid /> */}
+      {/*    
     <Fetch/> */}
-    {/* <Axios/> */}
-    <Page />
-    <Form />
-    <Store />
-    <DeleteAllDataByClick />
-    <Disable />
-    < Active />
-    {/* dD6EfEWjNii3FXG */}
-  </div>
+      {/* <Axios/> */}
+      <Page />
+      <Form />
+      <Store />
+      <DeleteAllDataByClick />
+      <Disable />
+      < Active />
+      {/* dD6EfEWjNii3FXG */}
+    </div>
   );
 }
 export default App;
