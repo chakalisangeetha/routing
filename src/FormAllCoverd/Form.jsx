@@ -19,6 +19,17 @@ const Form = (props) => {
     }
     setData({ ...data, [e.target.name]: e.target.value });
   };
+
+  const changeHandler=(e)=>{
+if(e.currentTarget.value.charAt(0) == " "){
+  e.target.value=e.target.value.replace(/\s/g," ");
+}
+setData({...data,[e.target.name]:e.target.value});
+  };
+
+
+
+
   const Openform = () => {
     setShowForm(!showform);
     setShowTable(!showTable);

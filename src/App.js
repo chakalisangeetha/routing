@@ -1,4 +1,7 @@
 import logo from './logo.svg';
+import OtherExamples from './IfCondition/OtherExamples';
+import IfCndtn from './IfCondition/IfCndtn';
+
 import Active from './ActiveInActive/Active'
 import DeleteAllDataByClick from './DltalldatabyclickAndDisable/DeleteAllDataByClick'
 import Disable from './DltalldatabyclickAndDisable/Disable'
@@ -32,7 +35,6 @@ import Practise from './SwitchCase/Practise';
 import EvenOdd from './SwitchCase/EvenOdd';
 import Dates from './DatesExample/Dates'
 import Fact from './Factorial/Fact'
-import IfCndtn from './IfCondition/IfCndtn';
 import Fetch from './FetchAndMock/FetchData';
 import Conditional from './CndtnlOprWthTwoAryOfObjects/Conditional';
 import Multiple from './LoopngMulVariablesAtAtime/Multiple';
@@ -46,9 +48,12 @@ import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
-       <Cases a={40} b={60}/>
+      <OtherExamples />
+      <IfCndtn />
+      <Cases a={40} b={60} />
       {/* <Button/>
     <Reusable/> */}
+
       < ContextProv>
         <ContextRoute />
       </ ContextProv>
@@ -57,7 +62,7 @@ function App() {
       <Multiple />
       <Conditional />
       <Fetch />
-      <IfCndtn />
+
       <Fact />
       <Dates />
       <Switch />
