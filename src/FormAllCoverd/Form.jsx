@@ -172,7 +172,7 @@ const Form = (props) => {
                   close{' '}
                 </button>
               </div>
-              
+
             </form>
           </div>
         </div>
@@ -189,7 +189,7 @@ const Form = (props) => {
                 onChange={Onsearch}
               />
             </div>
-            <Table data={filtereddata} delete={DeleteItem} edit={editItem}/>
+            <Table data={filtereddata} delete={DeleteItem} edit={editItem} />
           </div>
         )}
       </div>
