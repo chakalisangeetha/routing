@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import OtherExamples from './IfCondition/OtherExamples';
 import IfCndtn from './IfCondition/IfCndtn';
-
+import Radio from './RadioButton/Radio';
 import Active from './ActiveInActive/Active'
 import DeleteAllDataByClick from './DltalldatabyclickAndDisable/DeleteAllDataByClick'
 import Disable from './DltalldatabyclickAndDisable/Disable'
@@ -48,6 +48,7 @@ import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
+      <Radio/>
       <OtherExamples />
       <IfCndtn />
       <Cases a={40} b={60} />
