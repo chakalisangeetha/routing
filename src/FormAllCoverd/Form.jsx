@@ -28,7 +28,7 @@ const Form = (props) => {
     if (!data.firstname || !data.lastname || !data.email) {
       alert('please fill all the inputs...  ');
     } else if (data && togglebtn) {
-      setDataList(
+      setDataList (
         dataList.map((val) => {
           if (val.id === editId) {
             return {
