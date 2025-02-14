@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import Data from './Formik/Data'
+import Practise from './SwitchCase/Practise';
 import OtherExamples from './IfCondition/OtherExamples';
 import IfCndtn from './IfCondition/IfCndtn';
 import Radio from './RadioButton/Radio';
@@ -9,7 +11,6 @@ import Page from './Pagenation/Page';
 import Store from './LocalStorages/Store';
 //  import Axios from './AxiosPostAndGet/Axios'
 import Form from './FormAllCoverd/Form'
-import Data from './Formik/Data';
 import Valid from './Validations/Valid'
 import Password from './PasswordGenerator/Password';
 import Async from './AsyncAndAwait/Async';
@@ -31,7 +32,6 @@ import Drop from './DropDown/Drop';
 import Mapping from './MappingInsideMapping/Mapping';
 import Box from './CheckBoxExample/Box';
 import Switch from './SwitchCase/Switch';
-import Practise from './SwitchCase/Practise';
 import EvenOdd from './SwitchCase/EvenOdd';
 import Dates from './DatesExample/Dates'
 import Fact from './Factorial/Fact'
@@ -48,7 +48,9 @@ import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
+      <Data/>
       <Radio/>
+      <Practise />
       <OtherExamples />
       <IfCndtn />
       <Cases a={40} b={60} />
@@ -68,7 +70,7 @@ function App() {
       <Dates />
       <Switch />
       <EvenOdd />
-      <Practise />
+      
       <Switch />
       <Box />
       <Mapping />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Table from './Table';
+import { getByTestId } from '@testing-library/react';
 const Form = (props) => {
   const [togglebtn, setTogglebtn] = useState(false);
   const [editId, setEditId] = useState(null);
@@ -13,43 +14,35 @@ const Form = (props) => {
     email: '',
   });
   const { firstname, lastname, email } = data;
+
   const Changehandler = (e) => {
-    if (e.currentTarget.value.charAt(0) == ' ') {
+    if (e.currentTarget.value.chatAt(0) == '') {
       e.target.value = e.target.value.replace(/\s/g, '');
     }
     setData({ ...data, [e.target.name]: e.target.value });
-  };
-
-  const changeHandler=(e)=>{
-if(e.currentTarget.value.charAt(0) == " "){
-  e.target.value=e.target.value.replace(/\s/g," ");
-}
-setData({...data,[e.target.name]:e.target.value});
-  };
-
-
-
+  }
 
   const Openform = () => {
     setShowForm(!showform);
     setShowTable(!showTable);
   };
+
   const submithandler = (e) => {
     console.log(data, 'data');
     if (!data.firstname || !data.lastname || !data.email) {
       alert('please fill all the inputs...  ');
     } else if (data && togglebtn) {
-      setDataList (
-        dataList.map((val) => {
-          if (val.id === editId) {
+      setDataList(
+        dataList.map((item) => {
+          if (item.id === editId) {
             return {
-              ...val,
+              ...item,
               Fname: data.firstname,
               Lname: data.lastname,
               Email: data.email,
             };
           }
-          return val;
+          return item;
         })
       );
       setTogglebtn(false);
@@ -74,7 +67,15 @@ setData({...data,[e.target.name]:e.target.value});
         lastname: '',
         email: '',
       });
+      setShowForm(false);
+      setShowTable(true);
 
+      setData([...dataList, newItem])
+      setData({
+        firstname: '',
+        lastname: '',
+        email: '',
+      });
       setShowForm(false);
       setShowTable(true);
     }
@@ -93,7 +94,6 @@ setData({...data,[e.target.name]:e.target.value});
   const filtereddata = dataList.filter((item) =>
     item.Fname.toLowerCase().includes(searchInput.toLowerCase())
   );
-
   const DeleteItem = (getid) => {
     console.log(getid, 'id');
     const deleteditem = dataList.filter((item) => item.id !== getid);
@@ -114,7 +114,6 @@ setData({...data,[e.target.name]:e.target.value});
       email: editeddata.Email,
     });
   };
-
   const clearInput = () => {
     setData({
       firstname: '',
@@ -122,7 +121,7 @@ setData({...data,[e.target.name]:e.target.value});
       email: '',
     });
     togglebtn ? togglebtn && submithandler() : setShowForm(true);
-    alert(' your input are cleared...  ');
+    alert(' your inputs are cleared...  ');
   };
   return (
     <div className="Content">
@@ -172,7 +171,7 @@ setData({...data,[e.target.name]:e.target.value});
 
               <div className="buttonslist">
                 <button type="submit" onClick={submithandler}>
-                  {togglebtn ? 'Updata' : ' Submit '}
+                  {togglebtn ? 'Update' : ' Submit '}
                 </button>
                 <button type="clear" onClick={clearInput}>
                   {' '}
@@ -200,7 +199,7 @@ setData({...data,[e.target.name]:e.target.value});
                 onChange={Onsearch}
               />
             </div>
-            <Table data={filtereddata} delete={DeleteItem} edit={editItem} />
+            <Table data={filtereddata} delete={DeleteItem} edit={editItem}/>
           </div>
         )}
       </div>
