@@ -164,17 +164,13 @@ const Todo = () =>{
     <button onClick={() => setDark(!dark)}>
       {dark? "darkMode " : "lightMode"}
     </button>
-  
-
-   
     <Table
      storeData={storeList} 
      delete={deleteFile} 
      mode={dark}
      edit={editItem}
      send={sendData}
-     />
-    
+     /> 
     </div>
     }
     </div>
