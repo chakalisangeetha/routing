@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-const Practise = () => {
+import Password from '../PasswordGenerator/Password';
+const Data = () => {
   const [successMessage, setSuccessMessage] = useState('');
   const [showPassword, setShowPassword] = useState('');
   const [autoFill, setAutoFill] = useState(false);
   const validationSchema = Yup.object({
-    name: Yup.string().required('name is required'),
+    name: Yup.string()
+      .required('name is required'),
     email: Yup.string()
       .required('email is required')
       .email('invalid email format'),
@@ -124,4 +126,4 @@ const Practise = () => {
     </>
   );
 };
-export default Practise;
+export default Data;
