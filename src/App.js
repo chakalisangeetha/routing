@@ -1,16 +1,20 @@
 import logo from './logo.svg';
 import Data from './Formik/Data'
+import Form from './FormAllCoverd/Form'
+import Radio from './RadioButton/Radio';
+import Radios from './RadioButton/Radios';
 import Practise from './SwitchCase/Practise';
 import OtherExamples from './IfCondition/OtherExamples';
 import IfCndtn from './IfCondition/IfCndtn';
-import Radio from './RadioButton/Radio';
+
+
 import Active from './ActiveInActive/Active'
 import DeleteAllDataByClick from './DltalldatabyclickAndDisable/DeleteAllDataByClick'
 import Disable from './DltalldatabyclickAndDisable/Disable'
 import Page from './Pagenation/Page';
 import Store from './LocalStorages/Store';
 //  import Axios from './AxiosPostAndGet/Axios'
-import Form from './FormAllCoverd/Form'
+
 import Valid from './Validations/Valid'
 import Password from './PasswordGenerator/Password';
 import Async from './AsyncAndAwait/Async';
@@ -48,8 +52,10 @@ import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
-      <Data/>
-      <Radio/>
+      <Data />
+      <Form />
+      <Radio />
+      < Radios />
       <Practise />
       <OtherExamples />
       <IfCndtn />
@@ -70,7 +76,7 @@ function App() {
       <Dates />
       <Switch />
       <EvenOdd />
-      
+
       <Switch />
       <Box />
       <Mapping />
@@ -96,7 +102,7 @@ function App() {
     <Fetch/> */}
       {/* <Axios/> */}
       <Page />
-      <Form />
+
       <Store />
       <DeleteAllDataByClick />
       <Disable />
