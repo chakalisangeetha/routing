@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Radios = () => {
-
     const [selectedOption, setSelectedOption] = useState('');
     // State to manage whether the radio buttons are enabled or disabled
     const [isDisabled, setIsDisabled] = useState(false);
@@ -83,59 +82,58 @@ export default Radios;
 
 
 
-
 // import React, { useState } from 'react';
 // const Radios = () => {
 //     const [selectedOption, setSelectedOption] = useState('')
-//     const [disabled, isDisabled] = (false)
-//     const ToggleDisabled = () => {
-//         disabled(!disabled)
-//     }
-//     const handleRadioChange = (e) => {
+//     const [isDisabled, setIsDisabled] = useState(false)
+//     const selectChange=(e)=>{
 //         setSelectedOption(e.target.value)
 //     }
+//     const toggleDisable=()=>{
+//         setIsDisabled(!isDisabled)
+//         }
 //     return (
 //         <>radios
+//         <button onClick={toggleDisable}>{isDisabled?"enabled":"disabled"}radio button change</button>
+//             <div>
 
-//             <h1>button to toggle enable disable stage</h1>
-//             <button onClick={ToggleDisabled} >{isDisabled ? 'Enable' : 'Disable'}disable radio buttons</button>
-
-
-//             <label>
+//                 <lable> apple </lable>
 //                 <input
-//                     type="radio"
-//                     name="fruit"
-//                     value="Apple"
-//                     checked={selectedOption === 'Apple'}
-//                     onChange={handleRadioChange}
-//                     disabled={isDisabled} // Disable radio button if isDisabled is true
+//                     type='radio'
+//                     name='fruit'
+//                     value="apple"
+//                     onChange={selectChange}
+//                     checked={selectedOption === 'apple'}
+//                     isDisabled={setIsDisabled}
 //                 />
 //                 Apple
-//             </label>
 
-//             <input
-//                 type='radio'
-//                 name='fruit'
-//                 value='banana'
-//                 checked={selectedOption === 'banana'}
-//                 onChange={handleRadioChange}
-//                 disabled={isDisabled}
-//             />
-//             banana
-//             <input
-//                 type='radio'
-//                 value="mango"
-//                 checked={selectedOption === 'mango'}
-//                 onChange={handleRadioChange}
-//                 disabled={isDisabled}
-//             />
-//             mango
-//             <p>Your selected fruit is: {selectedOption}</p>
+
+//                 <lable>  Orange </lable>
+//                 <input
+//                     type='radio'
+//                     name='fruit'
+//                     value="Orange"
+//                     onChange={selectChange}
+//                     checked={selectedOption === 'Orange'}
+//                     isDisabled={setIsDisabled}
+//                 />
+//                 Orange
+
+
+
+//                 <lable> Mango </lable>
+//                 <input
+//                     type='radio'
+//                     name='fruit'
+//                     value=" Mango"
+//                     onChange={selectChange}
+//                     checked={selectedOption === 'Mango'}
+//                     isDisabled={setIsDisabled}
+//                 />
+//                 Apple
+//             </div>
 //         </>
-
-
-
-
 //     )
 // }
-// export default Radios
+// export default Radios;
