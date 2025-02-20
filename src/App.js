@@ -1,4 +1,7 @@
 import logo from './logo.svg';
+import Reusable from './ReusableConcept/Reusable';
+import Button from './ReusableConcept/Button';
+import Reusable from 'ReusableConcept/Reusable'
 import Data from './Formik/Data'
 import Form from './FormAllCoverd/Form'
 import Radio from './RadioButton/Radio';
@@ -6,15 +9,12 @@ import Radios from './RadioButton/Radios';
 import Practise from './SwitchCase/Practise';
 import OtherExamples from './IfCondition/OtherExamples';
 import IfCndtn from './IfCondition/IfCndtn';
-
-
 import Active from './ActiveInActive/Active'
 import DeleteAllDataByClick from './DltalldatabyclickAndDisable/DeleteAllDataByClick'
 import Disable from './DltalldatabyclickAndDisable/Disable'
 import Page from './Pagenation/Page';
 import Store from './LocalStorages/Store';
 //  import Axios from './AxiosPostAndGet/Axios'
-
 import Valid from './Validations/Valid'
 import Password from './PasswordGenerator/Password';
 import Async from './AsyncAndAwait/Async';
@@ -46,12 +46,13 @@ import SearchFilter from './Search and Filter/SearchFilter';
 import Accending from './AccendingAndDecending/Accending';
 import ContextProv from './ContextProvUsingRouting/ContextProv';
 import ContextRoute from './ContextProvUsingRouting/ContextRoute';
-// import Reusable from './ReusableConcept/Reuable';
-// import Button from './ReusableConcept/Button';
+
 import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
+      <Reusable/>
+      <Replacing/>
       <Data />
       <Form />
       <Radio />
@@ -62,7 +63,6 @@ function App() {
       <Cases a={40} b={60} />
       {/* <Button/>
     <Reusable/> */}
-
       < ContextProv>
         <ContextRoute />
       </ ContextProv>
@@ -71,12 +71,10 @@ function App() {
       <Multiple />
       <Conditional />
       <Fetch />
-
       <Fact />
       <Dates />
       <Switch />
       <EvenOdd />
-
       <Switch />
       <Box />
       <Mapping />
@@ -102,7 +100,6 @@ function App() {
     <Fetch/> */}
       {/* <Axios/> */}
       <Page />
-
       <Store />
       <DeleteAllDataByClick />
       <Disable />

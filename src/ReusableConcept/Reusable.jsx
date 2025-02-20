@@ -25,4 +25,4 @@ const Reusable = () => {
   );
 };
 
-export default  Reusable;
+export default Reusable;
