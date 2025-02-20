@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-  const Duplicates = () => {
+  const code = () => {
   const [toggle , setToggle] = useState(false)
   let data1 = [
  {id:1 , name:'varsha' , age:'20' , place:'hyd'},
