@@ -4,8 +4,7 @@ const Calculate = () => {
   const [secondNumber, setsecondNumber] = useState("");
   const [operator, setOperator] = useState("");
   const [result, setResult] = useState(null);
-
-  const calculateResult = (firstNumber, secondNumber, operator) => {
+  const Calculates = (firstNumber, secondNumber, operator) => {
     switch (operator) {
       case "+":
         return firstNumber + secondNumber;
@@ -18,15 +17,15 @@ const Calculate = () => {
       default:
         return 0;
     }
-  };
-
+  }
   const handleCalculate = () => {
     const num1 = parseFloat(firstNumber);
     const num2 = parseFloat(secondNumber);
     if (!isNaN(num1) && !isNaN(num2) && operator) {
-      const calculatedResult = calculateResult(num1, num2, operator);
+      const calculatedResult = Calculates(num1, num2, operator);
       setResult(calculatedResult);
     }
+    console.log(num1 , num2, '28==');
   };
   const handleReset = () => {
     alert("reset");
@@ -38,12 +37,12 @@ const Calculate = () => {
     <>
       Calculator
       <div> <lable>firstnumber</lable>
-      <input
-        type="number"
-        value={firstNumber}
-        onChange={(e) => setfirstNumber(e.target.value)}
-      /></div>
-      
+        <input
+          type="number"
+          value={firstNumber}
+          onChange={(e) => setfirstNumber(e.target.value)}
+        /></div>
+
 
       <div> <select value={operator} onChange={(e) => setOperator(e.target.value)}>
         operator
@@ -53,13 +52,13 @@ const Calculate = () => {
         <option type="*">*</option>
         <option type="/">/</option>
       </select></div>
-     
-     <div> <input
+
+      <div> <input
         type="number"
         value={secondNumber}
         onChange={(e) => setsecondNumber(e.target.value)}
       /></div>
-     
+
       <button onClick={handleCalculate}>Calculate</button>
       <button onClick={handleReset}>reset</button>
       {result !== null && <h2>Result:{result} </h2>}
