@@ -134,7 +134,7 @@ import React, { useState } from 'react';
 const Usecheck = () => {
 //   const [data, setData] = useState(true);
   const [hideTable, setHideTable] = useState(false);
-  const [infi, setInfi] = useState(true);
+  const [info, setInfo] = useState(true);
   const [zero, setZero] = useState(true);
   const [first, setFirst] = useState(true);
   const [second, setSecond] = useState(true);
@@ -188,8 +188,8 @@ const Usecheck = () => {
               <label>
                 <input
                   type="checkbox"
-                  checked={!infi}
-                  onChange={(e) => setInfi(!infi)}
+                  checked={!info}
+                  onChange={(e) => setInfo(!info)}
                 />
                 hide s no
               </label>
@@ -256,7 +256,7 @@ const Usecheck = () => {
         <table>
           <thead>
             <tr>
-              {infi && <th style={Border}>S no </th>}
+              {info && <th style={Border}>S no </th>}
               {zero && <th style={Border}>Fname</th>}
               {first && <th style={Border}>Lname</th>}
               {second && <th style={Border}>Email</th>}
@@ -274,7 +274,7 @@ const Usecheck = () => {
             //   }
             return (
               <tr key={index}>
-                {infi && <td style={Border}>{index + 1}</td>}
+                {info && <td style={Border}>{index + 1}</td>}
                 {zero && <td style={Border}>{item.fname}</td>}
                 {first && <td style={Border}>{item.lname}</td>}
                 {second && <td style={Border}>{item.email}</td>}

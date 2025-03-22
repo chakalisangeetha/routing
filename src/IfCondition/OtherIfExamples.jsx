@@ -1,17 +1,17 @@
 // import React from 'react';
-// function otherExamples  (props) {
+// function OtherIfExamples (props) {
 //     if (props.isLoggedIn) {
 //       return <h1>Welcome back!</h1>;
 //     } else {
 //       return <h1>Please log in.</h1>;
 //     }
 //   }
-//   export default  otherExamples;
+//   export default OtherIfExamples;
 
 
 
 // import React from 'react';
-//   function otherExamples({ status }) {
+//   function OtherIfExamples({ status }) {
 //     if (status === 'loading') {
 //       return <div>Loading...</div>;
 //     } else if (status === 'error') {
@@ -22,12 +22,12 @@
 //       return <div>Status unknown.</div>;
 //     }
 //   }
-// export default otherExamples
+// export default OtherIfExamples
 
 
 
 import React from 'react';
-const otherExamples = ({ userRole }) => {
+const OtherIfExamples = ({ userRole }) => {
   let message;
 
   if (userRole === 'admin') {
@@ -39,7 +39,7 @@ const otherExamples = ({ userRole }) => {
   }
   return <div>{message}</div>;
 };
-export default otherExamples;
+export default OtherIfExamples;
 
 
 

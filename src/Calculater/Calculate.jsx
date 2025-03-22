@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { set } from "react-hook-form";
 const Calculate = () => {
   const [firstNumber, setfirstNumber] = useState("");
   const [secondNumber, setsecondNumber] = useState("");
@@ -18,15 +19,26 @@ const Calculate = () => {
         return 0;
     }
   }
+  // const handleCalculate = () => {
+  //   const num1 = parseFloat(firstNumber);
+  //   const num2 = parseFloat(secondNumber);
+  //   if (!isNaN(num1) && !isNaN(num2) && operator) {
+  //     const calculatedResult = Calculates(num1, num2, operator);
+  //     setResult(calculatedResult);
+  //   }
+  //   console.log(num1 , num2, '28==');
+  // };
+
+
   const handleCalculate = () => {
     const num1 = parseFloat(firstNumber);
     const num2 = parseFloat(secondNumber);
     if (!isNaN(num1) && !isNaN(num2) && operator) {
       const calculatedResult = Calculates(num1, num2, operator);
-      setResult(calculatedResult);
+      setResult(calculatedResult)
     }
-    console.log(num1 , num2, '28==');
-  };
+    console.log(num1, num2, 'result:40==')
+  }
   const handleReset = () => {
     alert("reset");
     setfirstNumber("");

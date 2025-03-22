@@ -47,36 +47,40 @@ const Active = () => {
   const inprogress = data.filter((item) => item.off_status == "InProgress");
   console.log(inprogress, "INPROGRESS");
   return (
-    <>
-      <h1>Active:</h1>
-      <div>
-        {active.map((item) => {
-          return <p>{item.off_label}</p>;
-        })}
-      </div>
-      <h1>InActive</h1>
-      <div>
-        {inactive.map((item) => {
-          return <p>{item.off_label}</p>;
-        })}
-      </div>
-      <h1>InProgress</h1>
-      <div>
-        {inprogress.map((item) => {
-          return <p>{item.off_label}</p>;
-        })}
-      </div>
 
+    <>
       <h1>odd</h1>
       <div>
         {odd.map((item) => {
           return <p>{item}</p>;
         })}
       </div>
+
       <h1>even</h1>
       <div>
         {even.map((item) => {
           return <p>{item}</p>;
+        })}
+      </div>
+
+      <h1>Active:</h1>
+      <div>
+        {active.map((item) => {
+          return <p>{item.off_label}</p>;
+        })}
+      </div>
+
+      <h1>InActive</h1>
+      <div>
+        {inactive.map((item) => {
+          return <p>{item.off_label}</p>;
+        })}
+      </div>
+
+      <h1>InProgress</h1>
+      <div>
+        {inprogress.map((item) => {
+          return <p>{item.off_label}</p>;
         })}
       </div>
     </>

@@ -38,7 +38,7 @@ const Data = () => {
           console.log('Form Submitted:', values);
 
           alert(JSON.stringify(values, null, 2));
-          setSuccessMessage('form submitted succussfully');
+          setSuccessMessage('form submitted successfully');
           resetForm('');
         }}
       >
@@ -115,9 +115,16 @@ const Data = () => {
                 onChange={() => setShowPassword(!showPassword)}
               />
             </div>
+
+
+
+
             <button type="submit" disabled={!(dirty && isValid)}>
+              {/* sample line   {isSubmitting ? "Submitting..." : "Submit"}       sample line */}
               Submit
             </button>
+
+
 
             {successMessage && <div>{successMessage}</div>}
           </Form>
@@ -127,3 +134,71 @@ const Data = () => {
   );
 };
 export default Data;
+
+
+
+
+
+
+
+
+
+
+
+
+// example 2====
+
+// import React from "react";
+// import { Formik, Form, Field, ErrorMessage } from "formik";
+// import * as Yup from "yup";
+
+// const validationSchema = Yup.object({
+//   email: Yup.string().email("Invalid email format").required("Required"),
+//   password: Yup.string().min(6, "Password must be at least 6 characters").required("Required"),
+// });
+// const Data = () => {
+//   return (
+//     <Formik
+//     initialValues={{ email: "", password: "" }}
+//     validationSchema={validationSchema}
+//     onSubmit={(values, { setSubmitting }) => {
+//       console.log("Submitted Data:", values); // Log submitted data
+//       setSubmitting(false);
+//     }}
+//     >
+//       {({ isSubmitting }) => (
+//         <Form className="max-w-sm mx-auto p-4 border rounded shadow-md">
+//           <div className="mb-4">
+//             <label className="block text-sm font-medium">Email</label>
+//             <Field
+//               type="email"
+//               name="email"
+//               className="w-full border p-2 rounded"
+//             />
+//             <ErrorMessage name="email" component="div" className="text-red-500 text-sm" />
+//           </div>
+
+//           <div className="mb-4">
+//             <label className="block text-sm font-medium">Password</label>
+//             <Field
+//               type="password"
+//               name="password"
+//               className="w-full border p-2 rounded"
+//             />
+//             <ErrorMessage name="password" component="div" className="text-red-500 text-sm" />
+//           </div>
+
+//           <button
+//             type="submit"
+//             disabled={isSubmitting}
+//             className="w-full bg-blue-500 text-white py-2 rounded"
+//           >
+//             {isSubmitting ? "Submitting..." : "Submit"}
+//           </button>
+//         </Form>
+//       )}
+//     </Formik>
+//   );
+// };
+
+// export default Data;

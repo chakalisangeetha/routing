@@ -1,23 +1,23 @@
 import logo from './logo.svg';
-// import Reusable from './ReusableConcept/Reusable';
-// import Button from './ReusableConcept/Button';import Data from './Formik/Data'
-import Calculate from './Calculater/Calculate';
+// import Async from './AsyncAndAwait/Async';
+import Async2 from './AsyncAndAwait/Async2'
 import Data from './Formik/Data'
+import OtherIfExamples from './IfCondition/OtherIfExamples';
+import IfCndtn from './IfCondition/IfCndtn'
+import Page from './Pagenation/Page'
+import Calculate from './Calculater/Calculate';
 import Form from './FormAllCoverd/Form'
 import Radio from './RadioButton/Radio';
 import Radios from './RadioButton/Radios';
 import Practise from './SwitchCase/Practise';
-import OtherExamples from './IfCondition/OtherExamples';
-import IfCndtn from './IfCondition/IfCndtn';
+// import IfCndtn from './IfCondition/IfCndtn';
 import Active from './ActiveInActive/Active'
 import DeleteAllDataByClick from './DltalldatabyclickAndDisable/DeleteAllDataByClick'
 import Disable from './DltalldatabyclickAndDisable/Disable'
-import Page from './Pagenation/Page';
 import Store from './LocalStorages/Store';
 //  import Axios from './AxiosPostAndGet/Axios'
 import Valid from './Validations/Valid'
 import Password from './PasswordGenerator/Password';
-import Async from './AsyncAndAwait/Async';
 import Read from './ReadMoreAndLess/Read';
 import Name from './UpdateSelInput/Name';
 import EditDlt from './OnlyEditAndDlt/EditDlt';
@@ -50,20 +50,22 @@ import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
-            <Calculate />
-
-      {/* <Reusable/> */}
-      <Replacing/>
+ 
+    {/* <Async/> */}
+       <Async2/>
+      <Page />
+      <Calculate />
+      <Replacing />
       <Data />
       <Form />
       <Radio />
       < Radios />
       <Practise />
-      <OtherExamples />
+      <OtherIfExamples />
       <IfCndtn />
       <Cases a={40} b={60} />
       {/* <Button/>
-    <Reusable/> */}
+ 
       < ContextProv>
         <ContextRoute />
       </ ContextProv>
@@ -93,7 +95,7 @@ function App() {
       <EditDlt />
       <Name />
       <Read />
-      <Async />
+      
       <Password />
       {/* <Valid /> */}
       {/*    
@@ -109,3 +111,7 @@ function App() {
   );
 }
 export default App;
+
+
+
+

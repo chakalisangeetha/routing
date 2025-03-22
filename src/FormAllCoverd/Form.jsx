@@ -239,7 +239,6 @@
 
 import React, { useState } from 'react';
 import Table from './Table';
-
 const Form = () => {
   const [togglebtn, setTogglebtn] = useState(false);
   const [editId, setEditId] = useState(null);

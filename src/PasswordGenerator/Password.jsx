@@ -95,7 +95,6 @@ const Password = () => {
         />
         toLowerCase
       </div>
-
       <div>
         {' '}
         <input

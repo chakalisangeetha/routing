@@ -14,7 +14,6 @@ const Accending = () => {
     const handleIncrease = () => {
         const newData = data.toSorted(function (a, b) {
             return a.title > b.title ? 1 : -1;
-
         });
         setData(newData);
     };
@@ -24,6 +23,7 @@ const Accending = () => {
         });
         setData(newData);
     };
+
     return (
         <>
             datafetch
