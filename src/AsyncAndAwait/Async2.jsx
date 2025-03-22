@@ -14,7 +14,7 @@ const Async2 = () => {
         } else {
           reject("Error: Failed to fetch data.");
         }
-      }, 2000);
+      }, 2000)
     });
   };
   // Async function using await
