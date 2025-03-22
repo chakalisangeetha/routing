@@ -14,7 +14,8 @@ const SearchFilter=()=>{
       .then((json) => setPost(json));
   }, []);
 
-  function ChangeHandler(e) {
+  function 
+  ChangeHandler(e) {
     setSearch(e.target.value); // Update the search state when input changes
   }
 

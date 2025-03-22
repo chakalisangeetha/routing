@@ -1,7 +1,7 @@
 import logo from './logo.svg';
-import Reusable from './ReusableConcept/Reusable';
-import Button from './ReusableConcept/Button';
-import Reusable from 'ReusableConcept/Reusable'
+// import Reusable from './ReusableConcept/Reusable';
+// import Button from './ReusableConcept/Button';import Data from './Formik/Data'
+import Calculate from './Calculater/Calculate';
 import Data from './Formik/Data'
 import Form from './FormAllCoverd/Form'
 import Radio from './RadioButton/Radio';
@@ -29,7 +29,6 @@ import Cart from './CountingIncAndDec/Cart';
 import UseCallBack from './UseMemoAndCallBack/UseCallBack';
 import UseMemo from './UseMemoAndCallBack/UseMemo';
 import UseMemoCallBoth from './UseMemoAndCallBack/UseMemoCallBoth';
-import Calculate from './Calculater/Calculate';
 import RoutingPage from './RouterUsungParams/RoutingPage';
 import Routepage from './FiveInputsTodo/RoutePage';
 import Drop from './DropDown/Drop';
@@ -46,12 +45,14 @@ import SearchFilter from './Search and Filter/SearchFilter';
 import Accending from './AccendingAndDecending/Accending';
 import ContextProv from './ContextProvUsingRouting/ContextProv';
 import ContextRoute from './ContextProvUsingRouting/ContextRoute';
-
+import Replacing from './ReplacingNameWithOtherName/Replacing';
 import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
-      <Reusable/>
+            <Calculate />
+
+      {/* <Reusable/> */}
       <Replacing/>
       <Data />
       <Form />
@@ -81,7 +82,6 @@ function App() {
       <Drop />
       <Routepage />
       <RoutingPage />
-      <Calculate />
       <UseCallBack />
       <UseMemo />
       <UseMemoCallBoth />

@@ -5,6 +5,7 @@ const  Async = () => {
   const [error, setError] = useState(null);
 
   //if we want to throw an error or else show the errors on ui then we have to use try method
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -44,4 +45,20 @@ const  Async = () => {
 };
 
 export default Async;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

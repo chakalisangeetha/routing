@@ -131,7 +131,6 @@
 
 
 import React, { useState } from 'react';
-
 const Usecheck = () => {
 //   const [data, setData] = useState(true);
   const [hideTable, setHideTable] = useState(false);
@@ -174,7 +173,7 @@ const Usecheck = () => {
     setHideTable(!hideTable);
   };
 
-  const handleDataChange = (e) => {
+  const handleDataHide = (e) => {
     setData(e.target.value);
   };
 
@@ -244,11 +243,11 @@ const Usecheck = () => {
       </div>
 
       <div>
-        <label>enter serial number to hide row: </label>
+        <label>enter serial number to hide row (eg:1): </label>
         <input 
           type="number" 
           value={data} 
-          onChange={handleDataChange} 
+          onChange={handleDataHide} 
           placeholder="Enter serial number"
         />
       </div>
