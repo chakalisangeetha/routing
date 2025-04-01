@@ -1,6 +1,6 @@
 import logo from './logo.svg';
-// import Async from './AsyncAndAwait/Async';
-import Async2 from './AsyncAndAwait/Async2'
+ import Async from './AsyncAndAwait/Async';
+ import Async2 from './AsyncAndAwait/Async2'
 import Data from './Formik/Data'
 import OtherIfExamples from './IfCondition/OtherIfExamples';
 import IfCndtn from './IfCondition/IfCndtn'
@@ -33,7 +33,7 @@ import RoutingPage from './RouterUsungParams/RoutingPage';
 import Routepage from './FiveInputsTodo/RoutePage';
 import Drop from './DropDown/Drop';
 import Mapping from './MappingInsideMapping/Mapping';
-import Box from './CheckBoxExample/Box';
+import Box from './SelectCheckBoxExample/Box';
 import Switch from './SwitchCase/Switch';
 import EvenOdd from './SwitchCase/EvenOdd';
 import Dates from './DatesExample/Dates'
@@ -51,7 +51,7 @@ function App() {
   return (
     <div>
  
-    {/* <Async/> */}
+    <Async/>
        <Async2/>
       <Page />
       <Calculate />
