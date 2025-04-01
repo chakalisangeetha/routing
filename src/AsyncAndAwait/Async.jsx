@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
-const  Async = () => {
+const Async = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   //if we want to throw an error or else show the errors on ui then we have to use try method
-  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-       await new Promise((resolve, reject) => setTimeout(resolve,2000) 
-       )
+        await new Promise((resolve, reject) => setTimeout(resolve, 2000)
+        
+        )
         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
         if (!response.ok) {
           throw new Error('Network response was not ok');

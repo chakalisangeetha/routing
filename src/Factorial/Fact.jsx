@@ -10,7 +10,7 @@ const Fact=()=> {
     setResult(out);
     setInputData('');
     console.log(out, 'out');
-    console.log(inputData, 'inputData');
+    console.log(inputData, 'input');
   };
 
   function factorial(n) {
