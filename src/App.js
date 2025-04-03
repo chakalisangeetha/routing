@@ -1,6 +1,8 @@
 import logo from './logo.svg';
- import Async from './AsyncAndAwait/Async';
- import Async2 from './AsyncAndAwait/Async2'
+import ChangeLight from './ChangecolorUsingOnClickFun/ChangeLight';
+import Change from './ChangecolorUsingOnClickFun/Change';
+import Async from './AsyncAndAwait/Async';
+import Async2 from './AsyncAndAwait/Async2'
 import Data from './Formik/Data'
 import OtherIfExamples from './IfCondition/OtherIfExamples';
 import IfCndtn from './IfCondition/IfCndtn'
@@ -50,9 +52,10 @@ import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
- 
-    <Async/>
-       <Async2/>
+      <ChangeLight/>
+      <Change />
+      <Async />
+      <Async2 />
       <Page />
       <Calculate />
       <Replacing />

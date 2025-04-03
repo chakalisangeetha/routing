@@ -292,7 +292,6 @@ const Form = () => {
       resetForm();
     }
   };
-
   // Reset the form and state after submitting
   const resetForm = () => {
     setData({

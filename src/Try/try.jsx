@@ -22,7 +22,6 @@ const Async = () => {
         setLoading(false);
       }
     };
-   
     fetchData();
   }, []); // Empty dependency array means this effect runs once after the initial render
   if (loading) {
@@ -39,65 +38,5 @@ const Async = () => {
   );
 };
 export default Async;
-
-
-
-
-
-
-
-
-
-
-
-
-// import { useEffect, useState } from "react";
-
-// function Async() {
-//   const [data, setData] = useState(null);
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState(null);
-
-//   useEffect(() => {
-//     fetch("https://jsonplaceholder.typicode.com/todos/1")
-//       .then((response) => {
-//         if (!response.ok) {
-//           throw new Error("Network response was not ok");
-//         }
-//         return response.json();
-//       })
-//       .then((data) => {
-//         setData(data);
-//         setLoading(false);
-//       })
-//       .catch((error) => {
-//         setError(error.message);
-//         setLoading(false);
-//       });
-//   }, []);
-
-//   if (loading) return <p>Loading...</p>;
-//   if (error) return <p>Error: {error}</p>;
-
-//   return <pre>{JSON.stringify(data, null, 2)}</pre>;
-// }
-
-// export default Async;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
