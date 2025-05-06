@@ -7,7 +7,8 @@ const Dates = () => {
   });
   const { date1, date2 } = data;
 
-  const handleChange = (e) => {
+  const 
+  handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 

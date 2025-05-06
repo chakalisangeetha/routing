@@ -17,7 +17,7 @@ const Calculate = () => {
         return secondNumber !== 0 ? firstNumber / secondNumber : "Error";
       default:
         return 0;
-    }
+    } 
   }
   const handleCalculate = () => {
     const num1 = parseFloat(firstNumber);

@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import DataFetcher from './AsyncAndAwait/DataFetcher';
 import ChangeLight from './ChangecolorUsingOnClickFun/ChangeLight';
 import Change from './ChangecolorUsingOnClickFun/Change';
 import Async from './AsyncAndAwait/Async';
@@ -52,6 +53,7 @@ import Cases from './TestCases/Cases'
 function App() {
   return (
     <div>
+      <DataFetcher/>
       <ChangeLight/>
       <Change />
       <Async />

@@ -5,14 +5,14 @@ const Conditional = ( ) => {
   const store1 = [
     { name : 'seetha' , place : 'hyd' , age : '20'},
     { name : 'geetha' , place : 'ap' , age : '20'},
-    { name : 'neetha' , place : 'kt' , age : '20'},
+    { name : 'neetha' , place : 'kp' , age : '20'},
     { name : 'reetha' , place : 'up' , age : '20'},
   ];
    
   const store2 = [
     { name : 'vidhya' , place : 'hyd' , age : '20'},
     { name : 'akshaya' , place : 'ap' , age : '20'},
-    { name : 'varsha' , place : 'kt' , age : '20'},
+    { name : 'varsha' , place : 'kp' , age : '20'},
     { name : 'pranita' , place : 'up' , age : '20'},
   ];
  
@@ -22,7 +22,6 @@ const Conditional = ( ) => {
   }
 return(
   <>
-
   <button onClick={handleClick}>Change store</button>
   {
  (toggle ? store1 : store2).map((item) =>{
@@ -31,7 +30,6 @@ return(
     {item.name} -- {item.place} -- {item.age}
    </li>)
   })}
-  
   {/* {
     store2.map((item) =>  
     <li>  {item.name}   </li>

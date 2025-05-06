@@ -3,7 +3,6 @@ const Async2 = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-
   // Simulated API call with resolve and reject
   const fetchData = () => {
     return new Promise((resolve, reject) => {
@@ -22,7 +21,6 @@ const Async2 = () => {
     setLoading(true);
     setError(null);
     setData(null);
-    
     try {
       const result = await fetchData();
       setData(result);
@@ -32,7 +30,6 @@ const Async2 = () => {
       setLoading(false);
     }
   };
-
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       <h2>Async/Await Example in React</h2>
@@ -44,5 +41,4 @@ const Async2 = () => {
     </div>
   );
 };
-
 export default Async2;

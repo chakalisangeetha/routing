@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-const Page= () => {
+const 
+Page= () => {
   const [data, setData] = useState([]);
   const [pageNumbers, setPageNumbers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
