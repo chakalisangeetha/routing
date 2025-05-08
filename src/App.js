@@ -49,10 +49,12 @@ import Accending from './AccendingAndDecending/Accending';
 import ContextProv from './ContextProvUsingRouting/ContextProv';
 import ContextRoute from './ContextProvUsingRouting/ContextRoute';
 import Replacing from './ReplacingNameWithOtherName/Replacing';
-import Cases from './TestCases/Cases'
+import Cases from './TestCases/Cases';
+import Binary from './BinarySearch/Binary';
 function App() {
   return (
     <div>
+ <Binary/>
       <DataFetcher/>
       <ChangeLight/>
       <Change />
