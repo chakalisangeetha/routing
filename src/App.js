@@ -51,9 +51,11 @@ import ContextRoute from './ContextProvUsingRouting/ContextRoute';
 import Replacing from './ReplacingNameWithOtherName/Replacing';
 import Cases from './TestCases/Cases';
 import Binary from './BinarySearch/Binary';
+import Scrolling from './Highlight/Scrolling'
 function App() {
   return (
     <div>
+      <Scrolling/>
  <Binary/>
       <DataFetcher/>
       <ChangeLight/>
