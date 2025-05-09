@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './Scroll.css'
 
-const  Highlight=()=> {
+const Highlight = () => {
   const [scrollDirection, setScrollDirection] = useState('up');
-  
+
   useEffect(() => {
     let lastScrollY = window.scrollY;
 
@@ -19,7 +19,6 @@ const  Highlight=()=> {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   return (
     <div className="content">
       <p>Scroll this content to see the effect!</p>
