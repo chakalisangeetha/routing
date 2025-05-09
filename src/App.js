@@ -52,13 +52,16 @@ import Replacing from './ReplacingNameWithOtherName/Replacing';
 import Cases from './TestCases/Cases';
 import Binary from './BinarySearch/Binary';
 import Highlight from './Scrolling/Highlight'
+import Cook from './Cookies/Cook'
 function App() {
   return (
     <div>
-      <Highlight/>
- <Binary/>
-      <DataFetcher/>
-      <ChangeLight/>
+
+      < Cook />
+      <Highlight />
+      <Binary />
+      <DataFetcher />
+      <ChangeLight />
       <Change />
       <Async />
       <Async2 />
