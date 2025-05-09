@@ -3,11 +3,9 @@ function BinarySearchComponent() {
     const [arrayInput, setArrayInput] = useState('');
     const [target, setTarget] = useState('');
     const [result, setResult] = useState(null);
-
     const binarySearch = (arr, target) => {
         let low = 0;
         let high = arr.length - 1;
-
         while (low <= high) {
             let mid = Math.floor((low + high) / 2);
             if (arr[mid] === target) {
@@ -57,7 +55,6 @@ function BinarySearchComponent() {
         </div>
     );
 }
-
 export default BinarySearchComponent;
 
 
