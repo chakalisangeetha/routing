@@ -53,11 +53,14 @@ import Cases from './TestCases/Cases';
 import Binary from './BinarySearch/Binary';
 import Highlight from './Scrolling/Highlight'
 import Cook from './Cookies/Cook'
+import LogoCreate from './LogoCreation/LogoCreate'
+import Caro from './Carousel/Caro'
 function App() {
   return (
     <div>
-
-      < Cook />
+      <Caro/>
+      <LogoCreate />
+      <Cook />
       <Highlight />
       <Binary />
       <DataFetcher />
@@ -77,7 +80,6 @@ function App() {
       <IfCndtn />
       <Cases a={40} b={60} />
       {/* <Button/>
- 
       < ContextProv>
         <ContextRoute />
       </ ContextProv>
@@ -107,7 +109,6 @@ function App() {
       <EditDlt />
       <Name />
       <Read />
-      
       <Password />
       {/* <Valid /> */}
       {/*    

@@ -19,8 +19,8 @@ const Highlight = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  return (
-    <div className="content">
+  return ( 
+    <div className="content"> 
       <p>Scroll this content to see the effect!</p>
       <p className={`scroll-text ${scrollDirection === 'up' ? 'highlight' : 'lowlight'}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium.
